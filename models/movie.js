@@ -1,12 +1,12 @@
 import mongoose from 'mongoose'
 
-const taskSchema = new mongoose.Schema({
+const movieSchema = new mongoose.Schema({
   description: {type: String, required: true}
 }, {
   timestamps: true
 })
 
 
-const Task = mongoose.model('Task', TaskSchema)
+const Task = mongoose.model('Movie', movieSchema)
 
-export {Task}
+export { Movie }

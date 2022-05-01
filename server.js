@@ -5,7 +5,7 @@ import cors from 'cors'
 
 import { router as profilesRouter } from './routes/profiles.js'
 import { router as authRouter } from './routes/auth.js'
-import { router as taskRouter } from './routes/task.js'
+import { router as movieRouter } from './routes/movie.js'
 
 import('./config/database.js')
 
@@ -17,7 +17,7 @@ app.use(express.json())
 
 app.use('/api/profiles', profilesRouter)
 app.use('/api/auth', authRouter)
-app.use('api/task', taskRouter)
+app.use('api/movie', movieRouter)
 
 app.use(function (req, res, next) {
   res.status(404).json({ err: "Not found" })

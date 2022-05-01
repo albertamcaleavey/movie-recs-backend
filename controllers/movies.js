@@ -1,4 +1,4 @@
-import { Task } from '../models/task.js'
+import { Task } from '../models/movie.js'
 
 function index(req, res) {
   Task.find({})
@@ -16,5 +16,4 @@ function create (req, res) {
 export {
   index,
   create,
-
 }
